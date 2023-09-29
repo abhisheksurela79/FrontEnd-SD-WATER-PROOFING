@@ -1,0 +1,7 @@
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 3% 2rem 3%;
+}

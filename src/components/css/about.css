@@ -1,0 +1,73 @@
+body {
+    font-weight: 400;
+}
+
+#about-page {
+    margin-top: 14rem;
+    padding: 0 3%;
+    min-height: 100vh; /* Add a minimum height to ensure scrolling */
+}
+
+.about-text-container {
+    text-align: justify;
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 4vh;
+}
+
+.sd-waterproofing {
+    color: #f44336;
+}
+
+.paragraph {
+    font-size: 1rem;
+    margin: 1rem 0 2rem 0;
+    font-weight: 200;
+    color: rgb(34, 34, 34);
+}
+
+.baseimage1 {
+    width: 29%;
+    min-width: 250px;
+    max-width: 450px;
+    border-radius: 7px;
+}
+
+
+.baseimage3 {
+    width: 15%;
+    min-width: 250px;
+    max-width: 450px;
+    border-radius: 7px;
+}
+
+
+@media (max-width: 1229px) {
+    .box {
+        flex-direction: column-reverse;
+    }
+    
+    .heading {
+        font-size: 2.7vh;
+    }
+
+    .about-text-container {
+        width: 77%;
+    }
+
+    .paragraph {
+        padding: 0;
+    }
+}
+
+

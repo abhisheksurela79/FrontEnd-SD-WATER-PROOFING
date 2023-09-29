@@ -1,0 +1,98 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.contact-form {
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 50%;
+    max-width: 420px;
+    min-width: 250px;
+}
+
+.contact-message {
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.contact-form button {
+    color: rgb(255, 255, 255);
+    background-color: #f44336;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem;
+    font-weight: 300;
+}
+
+.contact-form button:hover {
+    background-color: #f82d1f;
+    color: white;
+}
+
+/* Override Bootstrap form focus styles */
+.form-control:focus {
+    border-color: #f44336;
+    /* Set the border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(247, 106, 96, 0.25);
+    /* Set the box-shadow on focus */
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(247, 106, 96, 0.25);
+    /* Set the webkit-box-shadow on focus */
+}
+
+.divider {
+    background-color: rgb(217, 216, 216);
+    height: 2px;
+    width: 50%;
+    max-width: 380px;
+    min-width: 180px;
+    margin: auto;
+    border-radius: 20%;
+}
+
+
+.map-container {
+    margin: 5rem 0;
+}
+
+.map-container > iframe {
+    border: 0;
+    margin: auto;
+    width: 50%;
+    max-width: 420px;
+    min-width: 250px;
+    height: 400px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    z-index: 999; /* Ensure it's above everything else */
+}
+
+
+@media (max-width: 799px) {
+    .contact-message {
+        width: 60%;
+
+    }
+}
+
+@media (max-width: 481px) {
+    .contact-message {
+        width: 80%;
+
+    }
+}

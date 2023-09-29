@@ -1,0 +1,32 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Lexend:wght@200;300;400&family=Montserrat:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lexend', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: #f6a7a1;
+}
+
+::selection {
+  background: #f6a7a1;
+  color: black;
+}
+
+
+

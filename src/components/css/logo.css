@@ -1,0 +1,24 @@
+.site-logo {
+    width: 30%;
+    min-width: 190px;
+    max-width: 390px;
+}
+
+
+@media (max-width: 427px) {
+    .site-logo {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 319px) {
+    .site-logo {
+        min-width: 130px;
+    }
+}
+
+@media (max-width: 283px) {
+    .site-logo {
+        min-width: 110px;
+    }
+}

@@ -1,0 +1,107 @@
+.base-image-container-services {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.base-image-services {
+    width: 100%;
+    height: auto;
+    filter: blur(0px) brightness(57%);
+}
+
+.inner-container-services {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 5vh;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-family: 'Lexend';
+}
+
+.services-content {
+    background-color: rgb(238, 238, 238);
+    padding-top: 1rem !important;
+}
+
+
+.services-section-items {
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.services-section-items:hover {
+    background-color: #e6e5e5;
+    border: 1px solid rgb(188, 188, 188);
+}
+
+.services-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-items: center;
+}
+
+
+.services-section-content-image {
+    width: 40%;
+    max-width: 190px;
+    border-radius: 22px;
+    padding: 1rem;
+}
+
+.services-section-content-paragraph {
+    width: 67%;
+    max-width: 357px;
+    text-align: left;
+    /* padding: 1rem; */
+}
+
+
+.paragraph-services {
+    padding: 5rem 3% 1rem 3%;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+@media (max-width: 622px) {
+    .inner-container-services {
+        font-size: 1.2rem;
+    }
+
+    .paragraph-services {
+        text-align: start !important;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .services-section-content-tittle {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .services-section-content-image {
+        margin: auto;
+        padding: 0.2rem;
+    }
+
+    .services-section-content-paragraph {
+        width: 100%;
+        max-width: 550px;
+        text-align: center;
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+        font-size: 14px;
+    }
+}

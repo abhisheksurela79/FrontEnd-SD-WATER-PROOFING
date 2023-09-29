@@ -1,0 +1,202 @@
+.no-scroll {
+    overflow-y: hidden;
+}
+
+#gallery-container {
+    line-height: 0;
+    -webkit-column-count: 5;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 5;
+    -moz-column-gap: 5px;
+    column-count: 5;
+    column-gap: 5px;
+}
+
+#gallery-container img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 1px;
+    /* to match column gap */
+    border-radius: 5px;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: transform 0.3s ease-out;
+    /* Add a transition for the transform property */
+    transform-origin: center center;
+}
+
+
+#gallery-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    position: relative;
+    z-index: 1;
+}
+
+.small-thumbnail-wrapper {
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.animated-background {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 800px 14px;
+    position: relative;
+}
+
+.slider-wrapper {
+    width: 100%;
+    background: #121212f7;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10501414141;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    /* Hide the element initially */
+    outline: none;
+    will-change: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    /* Add a transition property for opacity */
+}
+
+.slider-open {
+    opacity: 1;
+    visibility: visible;
+    /* Show the element when openModel is true */
+}
+
+.slider-wrapper .expended-image {
+    width: 40%;
+    max-width: 400px;
+    min-width: 245px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.content-preview-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-preview-row > h6 {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.content-preview-row > p {
+    color: rgb(195, 195, 195);
+    font-weight: 100;
+    padding: 0 3%;
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -80px 0
+    }
+
+    100% {
+        background-position: 800px 0
+    }
+}
+
+.content-preview-row {
+    position: fixed;
+    bottom: 5%;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.close-expanded-content-wrapper {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+}
+
+.close-expanded-content,
+.forward-expanded-content,
+.previous-expanded-content {
+    width: 80%;
+    height: 80%;
+    min-width: 10%;
+    max-width: 50px;
+    min-height: 10%;
+    max-height: 50px;
+    color: white;
+}
+
+.close-expanded-content:hover,
+.forward-expanded-content:hover,
+.previous-expanded-content:hover {
+    color: #e0e0e0;
+}
+
+.forward-expanded-content-wrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+
+.previous-expanded-content-wrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+}
+
+
+@media (max-width: 1200px) {
+    #gallery-container {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery-container {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 670px) {
+    #gallery-container {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    #gallery-container {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}

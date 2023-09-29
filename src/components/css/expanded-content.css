@@ -1,0 +1,21 @@
+.slider-wrapper {
+    width: 100%;
+    background: #121212f7;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10501414141;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    /* Hide the element initially */
+    outline: none;
+    will-change: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    /* Add a transition property for opacity */
+}

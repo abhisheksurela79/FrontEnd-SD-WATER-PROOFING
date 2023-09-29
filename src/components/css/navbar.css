@@ -1,0 +1,31 @@
+.navbar-brand {
+    width: 192px;
+}
+
+
+.top-nav {
+    padding: 0.8rem 3rem !important;
+    color: white !important;
+    background-color: #2c2c2c !important;
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+}
+
+.custom-nav {
+    background-color: #e5e5e5 !important;
+    color: white !important;
+    padding: 1rem 1.9rem !important;
+}
+
+
+@media only screen and (max-width: 408px) {
+    .navbar-brand {
+        width: 151px;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    .navbar-brand {
+        width: 130px;
+    }
+}
