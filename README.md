@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://your-logo-url-here.com" alt="S.D WaterProofing Logo">
+  <img src="https://github.com/abhisheksurela79/FrontEnd-SD-WATER-PROOFING/blob/main/src/static/S.D.png" alt="S.D WaterProofing Logo">
 </div>
 
 # S.D WaterProofing - ReactJS Website
